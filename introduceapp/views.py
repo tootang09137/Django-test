@@ -7,8 +7,8 @@ def department(request):
 def flex(request):
     return render(request, 'flex.html')
 
-def index(request):
-    return render(request, 'index.html')
+def layout(request):
+    return render(request, 'layout.html')
 
 def table(request):
     return render(request, 'table.html')

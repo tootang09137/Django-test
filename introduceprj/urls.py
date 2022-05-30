@@ -19,7 +19,7 @@ import introduceapp.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', introduceapp.views.index, name="index"),
+    path('', introduceapp.views.layout, name="layout"),
     path('department/', introduceapp.views.department, name="department"),
     path('flex/', introduceapp.views.flex, name="flex"),
     path('table/', introduceapp.views.table, name="table"),
