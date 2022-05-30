@@ -1,0 +1,9 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+grid-template-columns: 800px 800px 800px;
+grid-template-rows: 800px 800px 800px;
+    grid-gap: 1rem;
+    background: lightcyan; width: 2450px; height: 2420px;
+
+}

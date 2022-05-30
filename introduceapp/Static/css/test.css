@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'SuncheonB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SuncheonB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    
+    font-family: 'SuncheonB'; 
+    background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODEyMDZfMTk1%2FMDAxNTQ0MDk3MTIzOTIz.Vu77XzfXoP7yb4J6veekuR4byYKSFvcSFQm-GdaCGC8g.SzQCpLD9oBeUUkJnQl3txIZfxo4WHheOuU2WV7rLlT4g.JPEG.studygir%2FTBYUJY_%252845%2529.jpeg&type=sc960_832);
+    background-size:cover;
+
+}
+article{
+    padding: 50px;
+    margin: 20px;
+}
+table{
+    padding: 50px auto;
+    margin: 20px auto;
+}
+h1{
+    font-size: 45px;
+    color: orange;
+
+}
+h2{
+    font-size: 35px;
+    color: purple;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+blockquote, footer{
+    font-size: 20px;
+    text-align: center;
+}
+

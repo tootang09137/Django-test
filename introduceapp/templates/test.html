@@ -1,0 +1,125 @@
+{% extends 'index.html' %} 
+{% load static %} 
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/test.css' %}">
+    <title>HTML_CSS 실습 페이지</title>
+</head>
+{% endblock %}
+{% block footer %}
+<body>
+<header>
+    <h1>임민지의 홈페이지</h1>
+    <h2>이 곳은 저를 소개하는 페이지입니다.</h2>
+</header>
+
+        
+<h2>소개 순서</h2>
+<ol>
+<li>일기장(form실습)</li>
+<li>
+소속(링크 및 이미지 실습)
+<ul>
+<li>성공회대학교</li>
+<li>사회융합자율학부</li>
+</ul>
+</li>
+<li>이력(테이블 실습)</li>
+<li>좋아하는 것(텍스트 태그 소개)</li>
+</ol>
+        <section>
+            <article>
+                <form action="전송받을 대상">
+                    아이디: <input type = "text" name="myid">
+                    비밀번호:<input type="password" name="mypw">
+                </form>
+                <form action="일기장">
+                    <h2>일기장</h2>
+                    제목 : <input type="text" name="diaryTitle">
+                    <select>
+                        <option value="goodDay"> 좋은날 </option>
+                        <option value="sosoDay"> 그저그런날 </option>
+                        <option value="sadDay"> 슬픈날 </option>
+
+                    </select>
+                    <br>
+                    <h3>내용 : </h3>
+                    <textarea cols="30" rows="20"></textarea>
+                    <br>
+                    <input type="submit">
+                    
+                </form>
+            </article>
+            <article>
+                <h2>저의 소속입니다</h2>
+                <a href="html/department.html">소속 확인하기</a>
+            </article>
+            <br>
+            <article>
+                <h2>저의 이력입니다</h2>
+                <table>
+                    <thead>
+                        <tbody>
+                            <tr><!--첫번째 줄-->
+                            <td>2021년도</td>
+                        <td>성공회대학교 놀이터 11기 홍보팀</td>
+                    </tr>
+                    <tr><!--두번째 줄-->
+                    <td>2022년도</td>
+                <td>성공회대학교 멋쟁이사자처럼 10기 아기사자</td>
+            </tr>
+            <tr><!---두번째 줄-->
+                <td>2022년도</td>
+                <td>금쪽이 선생님</td>
+
+            </tr>
+            </tbody>
+        </tbody>
+    </table>        
+            </article>
+
+            <br>
+
+            <article>
+                <h2>좋아하는 것</h2>
+                <P style="text-align:center";>
+                    <b>그릭요거트 유튜브 엔시티</b>
+                </P>
+                <blockquote>
+                    <q> 내 맘대로 살거야 말리지 마</q>
+                    <i> 달라달라 노래가사 </i>
+                </blockquote>
+                <div class="card-body"> <!--여기에 첫 번째 부트스트랩 사용했습니다-->
+                    <h5 class="card-title">좋아하는 노래</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">아이브, 프로미스나인</h6>
+                    <p class="card-text">러브다이브, DM</p>
+                    <a href="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA0MjFfNTUg%2FMDAxNjUwNTAwNzMxMDU5.Fli94VkcAmQ4hPCIaS68-OTpyutfR8lqVV5zRnJomjkg.FAzmbQ4nGVn_eJVij-s49nhM6qhr-OAfOP49vjUUaAIg.JPEG.eyj2019%2FIMG_0884.jpg&type=sc960_832" class="card-link">아이브</a>
+                    <a href="https://search.pstatic.net/sunny/?src=http%3A%2F%2Fwww.onlifezone.com%2Ffiles%2Fattach%2Fimages%2F6006007%2F589%2F691%2F018%2Fc2bc905c76390c69d5280aef2741e72a.jpg&type=sc960_832" class="card-link">프로미스나인</a>
+</div>
+                
+<div class="card" style="width: 15rem;"> <!--여기에 두 번째 부트스트랩 사용했습니다-->
+                    <img src="https://w.namu.la/s/a1315fdd9351897244b0eacd314d7368f212f1aba53f3debb2e9be1b08e4477c310316ad3a91703edb20372c1c0bfe52bc240801f7f4710ce5eb8aea14f96297e155cfc05a65e482280b5e11544b6e2a41b5af505c57d5da871a5313562c6ba2b0b37c545b0675a26f80eb2599e0166c" class="card-img-top" alt="엔시티 사진">
+                    <div class="card-body">
+<h5 class="card-title">좋아하는 아이돌: 엔시티</h5>
+<p class="card-text">2016년 4월 9일 데뷔 윗줄부터 해찬 유타 지성 쇼타로 태일 성찬 천러 쿤 헨드리 도영 태용 샤오쥔 쟈니 재민 제노 런쥔 재현 정우 텐 마크 양양
+                        
+</p>
+</div>
+                
+            </article>
+
+            </section>
+
+            <br>
+            <hr>
+
+            <footer>
+                Copyright &copy; 성공회대학교 멋쟁이 사자처럼 10기
+            </footer>
+    </body>
+</html>
+{% endblock %}

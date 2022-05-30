@@ -1,0 +1,175 @@
+{% extends 'index.html' %} 
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>시간표 - 202112056 임민지</title>
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
+    </style>
+</head>
+{% endblock %}
+{% block footer %}
+<body>
+    <h1>시간표 - 202112056 임민지</h1>
+    <table style = "border:1";>
+    <tr>
+        <td class="hour"></td>
+        <td>월</td>
+        <td>화</td>
+        <td>수</td>
+        <td>목</td>
+        <td>금</td>
+    </tr>
+
+
+    <tr>
+        <td class="hour" rowspan="2">9시</td>
+        <td rowspan="6" style="background: lightblue";>인권영화와 영상제작<br>송아름<br>9:00~11:50<br>3401</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td class="hour" rowspan="2">10시</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td rowspan="3" style="background: lightcyan";>사회봉사1<br>김은규<br>10:30~11:50</td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td class="hour" rowspan="2">11시</td>
+        <td rowspan="2" style = "background: lightgoldenrodyellow;">전공탐색세미나(경영학전공)<br>박상선<br>11:00~11:50<br>3501</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td class="hour" rowspan="2">12시</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td class="hour" rowspan="2">1시</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td rowspan="3" style="background: lightpink";>C프로그래밍<br>이상윤<br>13:30~14:45<br>6206</td>
+        <td></td>
+        <td rowspan="3" style="background: lightpink";>C프로그래밍<br>이상윤<br>13:30~14:45<br>6206</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td class="hour" rowspan="2">2시</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td class="hour" rowspan="2">3시</td>
+        <td></td>
+        <td rowspan="6" style="background: lightskyblue";>경제환경과 기업경영<br>이웅<br>15:00~17:50<br>M205</td>
+        <td></td>
+        <td rowspan="6" style="background: lightyellow";>대학합창1<br>조지웅<br>15:00~17:50<br>9101</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td class="empty"></td>
+        <td class="empty"></td>
+        
+    </tr>
+
+    <tr>
+        <td class="hour" rowspan="2">4시</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+
+    <tr>
+        <td rowspan="3" style="background: lightcoral";>Java프로그래밍<br>이하규<br>16:30~17:45<br>6406</td>
+        <td rowspan="3" style="background: lightcoral";>Java프로그래밍<br>이하규<br>16:30~17:45<br>6406</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td class="hour" rowspan="2">5시</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td class="hour" rowspan="2">6시</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td rowspan="2" style="background: lightgrey";>전공탐색세미나(소프트웨어공학전공)<br>유상신<br>18:00~18:50<br>6202</td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</body>
+</html>
+{% endblock %}
